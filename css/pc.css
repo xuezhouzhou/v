@@ -1,0 +1,135 @@
+*{
+	margin:0;
+	padding:0;	
+}
+#search{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	height:25px;
+	border-bottom:1px solid #999;	
+	z-index:99;
+	background:#fff;
+	padding:3px;
+}
+#key{
+	display:block;
+	width:100%;
+	height:100%;
+	font-size:18px;
+	border:none;
+}
+#list{
+	position:absolute;
+	top:32px;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow-y:scroll;
+}
+#list a{
+	font-size:20px;
+	padding:6px;
+	display:block;
+	cursor:pointer;
+	color: #4183C4;
+	border-bottom:1px solid #eee;
+	text-overflow: ellipsis;
+ 	white-space: nowrap;
+	overflow:hidden;
+	text-decoration:none;
+}
+#list .size{
+	float:right;
+	color:#999;
+}
+#list a:hover,
+#list a.cur{
+	background:#5C6367;
+	color:#fff;
+}
+
+#list a:hover .size,
+#list a.cur .size{
+	color:#fff;
+}
+#box{ 
+	width:240px; 
+	height:135px;
+	background:#333; 
+	position:fixed; 
+	z-index:9999; 
+	left:0; 
+	bottom:0; 
+	display:none;
+	border:1px solid #000;
+}
+.btn{
+	cursor:pointer;
+	background:#000;
+	color:#fff;
+	line-height:24px;
+	text-align:center;
+	font-weight:800;
+	font-size:12px;
+	opacity:0.5;
+}
+.btn:hover{
+	opacity:0.8;
+}
+#size,#close,#light{
+	top:2px;
+	position:absolute;
+	height:24px;
+	z-index:3;
+}
+#size{
+	right:54px;
+	width:200px;
+}
+#size div{
+	width:24px;
+	height:24px;
+	float:right;
+	margin-left:2px;	
+}
+#size div.cur{
+	color:#FF0;	
+}
+#close{
+	right:2px;
+	width:24px;
+}
+#light{
+	right:28px;
+	width:24px;
+}
+#drag{
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	height:95px;
+	background:#000;	
+	z-index:2;
+	cursor:move;
+	opacity:0;
+}
+#hover{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:#333;
+	z-index:999;
+	display:none;
+}
+::-webkit-scrollbar{background-color:#f5f5f5;border-left:1px solid #d2d2d2;width:16px;}
+::-webkit-scrollbar:horizontal{height:0}
+::-webkit-scrollbar:vertical{width:12px;z-index:999}
+::-webkit-scrollbar-track{background-clip:padding-box;border:solid transparent;border-width:0 0 0 4px}
+::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.2);background-clip:padding-box;min-height:28px;padding:100px 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);}
+::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.4);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}
+::-webkit-scrollbar-thumb:horizontal{box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset -1px 0 0 rgba(0,0,0,.07)}
